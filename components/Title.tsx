@@ -9,7 +9,7 @@ export const Title: React.FC<{ title: string }> = ({ title }) => {
 
     return (
         <div className="flex inline-flex text-center mx-auto text-white">
-            <h1 className="text-center font-extrabold text-4xl mt-5">
+            <h1 className="text-center font-extrabold text-4xl">
                 <TbSquareRotatedFilled size={15} style={iconStyle} /> {title} <TbSquareRotatedFilled size={15} style={iconStyle} />
             </h1>
         </div>

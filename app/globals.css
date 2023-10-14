@@ -83,3 +83,7 @@ body {
       transform: translate3d(0, 25px, 0);
   }
 }
+
+.divider {
+  padding-top: 0.25px;
+}
