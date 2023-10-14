@@ -2,15 +2,23 @@
 
 import Link from "next/link"
 import Typewriter from "typewriter-effect"
-import { BiDownArrow } from "react-icons/bi"
+import { BiSolidDownArrow } from "react-icons/bi"
 
 export const Hero: React.FC = () => {
   return (
     <div className="hero-header bg-primary text-white py-6">
       <div className="info container-md mx-auto px-8">
-        <h1 className="font-bold text-center text-6xl mb-2" data-aos="zoom-in">
-          Bleed
-        </h1>
+
+        <div className="flex text-center">
+            <div className="mx-auto flex space-x-6">
+                <img src="../blue fire.png" className="h-14" />
+                <h1 className="font-bold text-center text-6xl mb-2" data-aos="zoom-in">
+                    Bleed
+                </h1>
+                <img src="../blue fire.png" className="h-14" />
+            </div>
+        </div>
+
         <h2 className="font-normal text-2xl text-justify" data-aos="zoom-in">
           <Typewriter
             options={{
@@ -21,14 +29,14 @@ export const Hero: React.FC = () => {
             }}
           />
         </h2>
-        <Link href="about">
-          <button className="px-4 py-2 rounded-md border-white border-2 btn-lg mt-4" data-aos="zoom-in">
+        {/* <Link href="about">
+          <button className="px-4 py-2 rounded-md bg-primary border-primary border-2 mt-4" data-aos="zoom-in">
             Read more
           </button>
-        </Link>
+        </Link> */}
         <br />
-        <button className="mt-5 mx-auto">
-          <BiDownArrow color="#fff" size={30} className="bounce" />
+        <button className="mt-3 mx-auto">
+          <BiSolidDownArrow color="#fff" size={35} className="bounce" />
         </button>
       </div>
     </div>
