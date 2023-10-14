@@ -10,9 +10,9 @@ export const Hero: React.FC = () => {
       <div className="info container-md mx-auto px-8">
 
         <div className="flex text-center">
-            <div className="mx-auto flex space-x-6">
+            <div className="mx-auto flex space-x-6" data-aos="zoom-in">
                 <img src="../blue fire.png" className="h-14" />
-                <h1 className="font-bold text-center text-6xl mb-2" data-aos="zoom-in">
+                <h1 className="font-bold text-center text-6xl mb-2">
                     Bleed
                 </h1>
                 <img src="../blue fire.png" className="h-14" />
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
           </button>
         </Link> */}
         <br />
-        <button className="mt-3 mx-auto">
+        <button className="mt-3 mx-auto" data-aos="zoom-in">
           <BiSolidDownArrow color="#fff" size={35} className="bounce" />
         </button>
       </div>
