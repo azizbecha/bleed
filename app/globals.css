@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hero-header {
+  background-image: url("../public/cover.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  line-height : 70vh;
+}
+
+.hero-header .info {
+  display : inline-block;
+  line-height : normal;
+  vertical-align : middle; 
+}
+
+.hero-header .info h1 {
+  margin: 0;
+  margin-bottom: 13px;
+  color: white;
+  text-shadow: 4px 4px #164dff;
+}
+
+.hero-header .info h2 {
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 4px 2px #000;
+}
+
+.bounce {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(0, 25px, 0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+  }
+}
