@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
         <br />
         <button className="mt-3 mx-auto" data-aos="zoom-in">
           <a href="#about">
-          <BiSolidDownArrow color="#fff" size={35} className="bounce" />
+            <BiSolidDownArrow color="#fff" size={35} className="bounce" />
           </a>
         </button>
       </div>

@@ -8,7 +8,7 @@ export const Title: React.FC<{ title: string }> = ({ title }) => {
     };
 
     return (
-        <div className="flex inline-flex text-center mx-auto text-white">
+        <div className="flex inline-flex text-center mx-auto text-white" data-aos="zoom-out">
             <h1 className="text-center font-extrabold text-4xl text-center">
                 <TbSquareRotatedFilled size={15} style={iconStyle} /> {title} <TbSquareRotatedFilled size={15} style={iconStyle} />
             </h1>
