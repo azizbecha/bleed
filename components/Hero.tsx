@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
             </div>
         </div>
 
-        <h2 className="font-normal text-2xl text-justify" data-aos="zoom-in">
+        <h2 className="font-normal text-3xl text-center" data-aos="zoom-in">
           <Typewriter
             options={{
               strings: "Tunisian clothing brand owned by a bleed for bleed people",

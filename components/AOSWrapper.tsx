@@ -1,6 +1,8 @@
 "use client"
 import { useEffect } from 'react';
 
+import NextNProgress from 'nextjs-progressbar';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,7 +13,12 @@ export default function AOSWrapper({
 }) {
     useEffect(() => {
         AOS.init()
-    }, [])
+    }, []);
 
-    return <>{children}</>
+    return (
+        <>
+            <NextNProgress color="#f00004" height={50} />
+            {children}
+        </>
+    )
 }
