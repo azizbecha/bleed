@@ -6,6 +6,7 @@ import { Divider } from '@/components/Divider'
 import { ProductsRow } from '@/components/ProductsRow'
 
 import { IoMdArrowDropright } from "react-icons/io"
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </AOSWrapper>
   )
 }
