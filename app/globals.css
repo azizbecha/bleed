@@ -85,6 +85,21 @@ body {
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 12s linear infinite;
+}
+
 .divider {
   padding-top: 0.25px;
 }

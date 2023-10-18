@@ -10,6 +10,11 @@ import { IoMdArrowDropright } from "react-icons/io"
 export default function Home() {
   return (
     <AOSWrapper>
+      <div className="bg-blue-500 text-white text-center py-2">
+        <div className="scrolling-text">
+
+        We provide ship orders over all Tunisia. Please don't hesitate to reach out to us if you have any questions. Our customer support is available 24/7.        </div>
+      </div>
       <Navbar />
       <Hero />
 
@@ -20,7 +25,7 @@ export default function Home() {
               <Title title='Who are We' />
               <h1 className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi inventore eligendi quam quasi iure? At laudantium natus praesentium et id perspiciatis ad alias aliquam ipsam in tempore cumque, itaque atque.</h1>
             
-              <button className='flex items-center font-mono px-4 py-2 mt-5 hover:rounded-xl border-2 border-white mx-auto text-center'>
+              <button className='flex items-center font-mono px-4 py-2 mt-5 hover:underline border-2 border-white mx-auto text-center'>
                 Learn More
                 <IoMdArrowDropright size={19} className='ml-2' />
               </button>
@@ -32,6 +37,8 @@ export default function Home() {
               <Title title='Products' />
 
               <ProductsRow />
+
+              <p className='text-left cursor-pointer mt-2 hover:underline font-mono text-lg'>More products &#8250;</p>
             </div>
 
           </div>
