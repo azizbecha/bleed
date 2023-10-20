@@ -32,7 +32,7 @@ export default function Home() {
           <div className="text-white">
             <div id="products">
               <Title title='Products' />
-              <p className="text-center text-md font-mono mt-2 mb-5">
+              <p className="text-center text-md font-mono mt-2 mb-5" data-aos="fade-out">
                 Check out our wide selection of products
               </p>
 
@@ -43,52 +43,52 @@ export default function Home() {
 
             <Divider />
 
-            <div id='#about' data-aos="zoom-out">
+            <div id='about'>
               <Title title='About Us' />
 
-              <h1 className='text-center px-10 mt-4'>
+              <h1 className='text-center px-10 mt-4' data-aos="zoom-out">
                 Founded in Summer 2022 by YBA, BLEED is a rising Tunisian clothing brand selling unique wearings across the world.
                 more creative general description goes here bla bla bla bla xD
               </h1>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mt-2 sm:mt-8">
-                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-x-2 md:border-b-0 border-r-0">
+                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-x-2 md:border-b-0 border-r-0" data-aos="zoom-in">
                   {/* <BsFillCartCheckFill className="mx-auto mb-2" size={24} /> */}
-                  <img src="../smile 2.png" className='w-32 h-32 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
-                  <CountUp duration={3} start={0} end={50} redraw={true}>
+                  <img src="../BLEEDMAN IN LOVE.png" className='w-32 h-32 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
+                  <CountUp duration={3} start={0} end={69} redraw={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
-                        <h3 className="text-5xl font-mono text-bold mt-2 mb-2" ref={countUpRef as RefObject<HTMLHeadingElement>}></h3>
+                        <h3 className="text-5xl font-mono font-extrabold mt-4 mb-2" ref={countUpRef as RefObject<HTMLHeadingElement>}></h3>
                       </VisibilitySensor>
                     )}
                   </CountUp>
-                  <p className='mb-4'>Satisfied customer</p>
+                  <p className='mb-4 font-medium'>Satisfied customer</p>
                 </div>
 
-                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0">
-                  <img src="../VERIFIED.png" className='w-36 h-36 -mt-2 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
-                  <CountUp duration={3} start={0} end={100} redraw={true}>
+                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
+                  <img src="../VERIFIED.png" className='w-36 h-36  mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
+                  <CountUp duration={2} start={0} end={999} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
-                          <h3 className="text-5xl font-mono text-bold mt-2 mb-2">
-                            <span ref={countUpRef as RefObject<HTMLHeadingElement>}></span>%
+                          <h3 className="text-5xl font-mono font-extrabold mt-2 mb-2">
+                            +<span ref={countUpRef as RefObject<HTMLHeadingElement>}></span>
                           </h3>
                         </VisibilitySensor>
                       )}
                     </CountUp>
-                  <p className='mb-4'>Creativity</p>
+                  <p className='mb-4 font-medium'>Creativity</p>
                 </div>
 
-                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0">
-                  <img src="../cap2.png" className='w-32 h-32 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
+                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
+                  <img src="../cap2.png" className='w-36 h-36 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
                   <CountUp duration={3} start={0} end={5} redraw={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
-                        <h3 className="text-5xl font-mono text-bold mt-2 mb-2" ref={countUpRef as RefObject<HTMLHeadingElement>}></h3>
+                        <h3 className="text-5xl font-mono font-extrabold mt-1 mb-2" ref={countUpRef as RefObject<HTMLHeadingElement>}></h3>
                       </VisibilitySensor>
                     )}
                   </CountUp>
-                  <p className='mb-4'>Products</p>
+                  <p className='mb-4 font-medium'>Products</p>
                 </div>
               </div>
 
