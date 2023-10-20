@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import Typewriter from "typewriter-effect"
 import { BiSolidDownArrow } from "react-icons/bi"
 

@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Home', href: '#', current: false },
   { name: 'About', href: '#', current: false },
   { name: 'Products', href: '#', current: false },
+  { name: 'Order Tracking', href: "#", current: false },
   { name: 'Contact', href: '#', current: false },
   { name: 'FAQ', href: '#', current: false },
   // { name: 'Cart', href: '#', current: false },
@@ -42,9 +43,9 @@ export default function Navbar() {
                   <img
                     className="h-14 w-auto"
                     src="../BLEED LOGO.png"
-                    alt="Your Company"
+                    alt="BLEED"
                   />
-                  {/* <h5 className='text-primary font-bold'>Bleed</h5> */}
+                  <h5 className='text-black text-2xl font-bold sm:block hidden'>BLEED</h5>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -63,7 +64,7 @@ export default function Navbar() {
                       key={item.name}
                       className={classNames(
                         item.current ? 'bg-gray-900' : 'text-primary',
-                        'rounded-md px-4 py-3 text-sm font-medium font-extrabold hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
+                        'rounded-md px-4 py-3 text-sm font-medium hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
