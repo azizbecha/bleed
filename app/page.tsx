@@ -1,5 +1,7 @@
 "use client"
 
+import { RefObject } from 'react'
+
 import Navbar from '@/components/Navbar'
 import AOSWrapper from '@/components/AOSWrapper'
 import { Hero } from '@/components/Hero'
@@ -12,7 +14,6 @@ import { IoMdArrowDropright } from "react-icons/io"
 
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
-import { RefObject } from 'react'
 
 export default function Home() {
   return (
@@ -98,14 +99,6 @@ export default function Home() {
             </div>
 
             <Divider />
-
-            {/* <Title title='Subscribe' /> */}
-
-            {/* <div className="w-full bg-white rounded-xl p-8 mt-5">
-              <h1 className="text-black text-start font-semibold text-2xl w-1/2">
-                Subscribe to our mailing list to receive our latest news
-              </h1>
-            </div> */}
 
             <section className="bg-white flex rounded-lg">
               <div className="grid grid-cols-3 gap-2">
