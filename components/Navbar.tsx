@@ -64,7 +64,7 @@ export default function Navbar() {
                       key={item.name}
                       className={classNames(
                         item.current ? 'bg-gray-900' : 'text-primary',
-                        'rounded-md px-4 py-3 text-sm font-medium hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
+                        'rounded-md px-4 py-3 text-sm font-semibold hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >

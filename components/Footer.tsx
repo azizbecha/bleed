@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
                             className="h-10 mr-3"
                             alt="Bleed Logo"
                         />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                        <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
                             BLEED
                         </span>
                     </Link>
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 font-bold">
+                <span className="block text-sm text-gray-500 sm:text-center font-bold">
                     © {new Date().getFullYear()}{" - "}
                     <Link href="/" className="hover:underline">
                         BLEED
