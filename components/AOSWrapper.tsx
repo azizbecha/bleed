@@ -16,9 +16,9 @@ export default function AOSWrapper({
     }, []);
 
     return (
-        <div className='h-screen'>
+        <>
             <NextNProgress color="#f00004" height={50} />
             {children}
-        </div>
+        </>
     )
 }

@@ -26,10 +26,10 @@ export default function Home() {
 
       <Container>
         <div className="flex justify-center text-center">
-          <div className="text-white">
+          <div className="text-black">
             <div id="products">
               <Title title='Products' />
-              <p className="text-center text-md font-mono mt-2 mb-5" data-aos="fade-out">
+              <p className="text-center text-md font-mono mt-2 mb-5">
                 Check out our wide selection of products
               </p>
 
@@ -49,8 +49,7 @@ export default function Home() {
               </h1>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mt-2 sm:mt-8">
-                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-x-2 md:border-b-0 border-r-0" data-aos="zoom-in">
-                  {/* <BsFillCartCheckFill className="mx-auto mb-2" size={24} /> */}
+                <div className="text-center text-white bg-primary rounded-lg items-center h-auto py-5 border-b-2 md:border-x-2 md:border-b-0 border-r-0" data-aos="zoom-in">
                   <img src="../BLEEDMAN IN LOVE.png" className='w-32 h-32 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
                   <CountUp duration={3} start={0} end={69} redraw={true}>
                     {({ countUpRef, start }) => (
@@ -62,7 +61,7 @@ export default function Home() {
                   <p className='mb-4 font-medium'>Satisfied customer</p>
                 </div>
 
-                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
+                <div className="text-center text-white bg-primary rounded-lg items-center h-auto py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
                   <img src="../VERIFIED.png" className='w-36 h-36  mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
                   <CountUp duration={2} start={0} end={999} redraw={true}>
                       {({ countUpRef, start }) => (
@@ -76,7 +75,7 @@ export default function Home() {
                   <p className='mb-4 font-medium'>Creativity</p>
                 </div>
 
-                <div className="text-center text-black bg-white rounded-lg items-center h-auto border-white py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
+                <div className="text-center text-white bg-primary rounded-lg items-center h-auto py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
                   <img src="../cap2.png" className='w-36 h-36 mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
                   <CountUp duration={3} start={0} end={5} redraw={true}>
                     {({ countUpRef, start }) => (
@@ -89,7 +88,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <button className='flex text-center mx-auto border-2 border-white px-4 py-2 mt-4 items-center font-mono hover:underline'>
+              <button className='flex text-center mx-auto border-2 border-primary px-4 py-2 mt-4 items-center font-mono hover:underline'>
                 Read more
                 <IoMdArrowDropright size={19} className='ml-2' />
               </button>

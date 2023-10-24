@@ -9,7 +9,7 @@ interface Props {
 
 export const ProductCard: React.FC<Props> = (props) => {
     return (
-        <div className="bg-white p-0.5 mb-3" data-aos="zoom-out">
+        <div className="bg-white p-0.5 mb-3 border-inherit border-2 w-full border-black" data-aos="zoom-out">
             {
                 !props.available ? (
                     <div className="absolute w-15 bg-white text-red font-semibold text-sm px-2">
