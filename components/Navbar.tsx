@@ -10,9 +10,9 @@ const navigation = [
   { name: 'About', href: '#', current: false },
   { name: 'Products', href: '#', current: false },
   { name: 'Order Tracking', href: "#", current: false },
+  { name: 'Gallery', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
   { name: 'FAQ', href: '#', current: false },
-  // { name: 'Cart', href: '#', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -22,7 +22,7 @@ function classNames(...classes: string[]) {
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-white border-b-primary border-b-4">
-      {({ open }: {open:boolean}) => (
+      {({ open }: {open: boolean}) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
