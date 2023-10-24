@@ -1,9 +1,10 @@
 import AOSWrapper from "@/components/AOSWrapper";
-import { Container } from "@/components/Container";
-import { Footer } from "@/components/Footer";
+
 import Navbar from "@/components/Navbar";
-import { ProductsRow } from "@/components/ProductsRow";
+import { Footer } from "@/components/Footer";
 import { Title } from "@/components/Title";
+import { Container } from "@/components/Container";
+import { ProductsRow } from "@/components/ProductsRow";
 
 export default function Product() {
     return (
