@@ -1,5 +1,5 @@
 export const Divider: React.FC = () => {
     return (
-        <hr className="divider text-center bg-white my-8"></hr>
+        <hr className="divider text-center bg-black my-8 border-t-2"></hr>
     )
 }
