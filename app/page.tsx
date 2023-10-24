@@ -8,6 +8,7 @@ import { Hero } from '@/components/Hero'
 import { Title } from '@/components/Title'
 import { Divider } from '@/components/Divider'
 import { ProductsRow } from '@/components/ProductsRow'
+import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 
 import { IoMdArrowDropright } from "react-icons/io"
@@ -27,7 +28,7 @@ export default function Home() {
       <Navbar />
       <Hero />
 
-      <div className='container mx-auto max-w-screen-xl mt-5 px-3 sm:px-10 py-6 lg:px-8'>
+      <Container>
         <div className="flex justify-center text-center">
           <div className="text-white">
             <div id="products">
@@ -121,7 +122,7 @@ export default function Home() {
             </section>
           </div>
         </div>
-      </div>
+      </Container>
       <Footer />
     </AOSWrapper>
   )
