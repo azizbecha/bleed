@@ -104,3 +104,31 @@ body {
 .divider {
   padding-top: 0.25px;
 }
+
+.top-to-btm{
+  position: relative;
+}
+
+.icon-position{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.icon-style{
+  background-color: #164dff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.icon-style:hover {
+  background-color: #fff;
+  color: #164dff;
+  border: 2px solid #164dff;
+}

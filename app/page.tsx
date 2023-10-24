@@ -17,6 +17,7 @@ import { IoMdArrowDropright } from "react-icons/io"
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 import Link from 'next/link'
+import { ScrollToTopButton } from '@/components/ScrollToTopButton'
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
       <NoteSlider />
       <Navbar />
       <Hero />
-
+      <ScrollToTopButton />
+      
       <Container>
         <div className="flex justify-center text-center">
           <div className="text-black">
