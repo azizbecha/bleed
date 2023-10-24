@@ -16,6 +16,7 @@ import { IoMdArrowDropright } from "react-icons/io"
 
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -35,7 +36,11 @@ export default function Home() {
 
               <ProductsRow />
 
-              <p className='text-left cursor-pointer mt-2 hover:underline font-mono text-lg'>More products &#8250;</p>
+              <Link href={"products"}>
+                <p className='text-left cursor-pointer mt-2 hover:underline font-mono text-lg'>
+                  More products &#8250;
+                </p>
+              </Link>
             </div>
 
             <Divider />
@@ -63,11 +68,11 @@ export default function Home() {
 
                 <div className="text-center text-white bg-primary rounded-lg items-center h-auto py-5 border-b-2 md:border-r-2 md:border-b-0 border-r-0" data-aos="zoom-in">
                   <img src="../VERIFIED.png" className='w-36 h-36  mx-auto relative overflow-hidden transform transition-transform hover:scale-125' alt="" />
-                  <CountUp duration={2} start={0} end={999} redraw={true}>
+                  <CountUp duration={2} start={0} end={100} redraw={true}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <h3 className="text-5xl font-mono font-extrabold mt-2 mb-2">
-                            +<span ref={countUpRef as RefObject<HTMLHeadingElement>}></span>
+                            <span ref={countUpRef as RefObject<HTMLHeadingElement>}></span>%
                           </h3>
                         </VisibilitySensor>
                       )}

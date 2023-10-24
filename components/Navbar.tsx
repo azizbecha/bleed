@@ -4,6 +4,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 
 import { FaBars, FaShoppingCart, FaTimes } from "react-icons/fa"
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '#', current: false },
@@ -38,16 +39,18 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-14 w-auto"
-                    src="../BLEED LOGO.png"
-                    alt="BLEED"
-                  />
-                  <h5 className='text-black text-2xl font-bold sm:block hidden'>BLEED</h5>
+              <Link href="/">
+                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div className="flex flex-shrink-0 items-center">
+                    <img
+                      className="h-14 w-auto"
+                      src="../BLEED LOGO.png"
+                      alt="BLEED"
+                    />
+                    <h5 className='text-black text-2xl font-bold sm:block hidden'>BLEED</h5>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* <button
                   type="button"
@@ -60,16 +63,16 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex">
                     {navigation.map((item) => (
-                      <button
-                      key={item.name}
-                      className={classNames(
-                        item.current ? 'bg-gray-900' : 'text-primary',
-                        'rounded-md px-4 py-3 text-sm font-semibold hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
-                    >
-                      {item.name}
-                    </button>
+                        <button
+                          key={item.name}
+                          className={classNames(
+                            item.current ? 'bg-gray-900' : 'text-primary',
+                            'rounded-md px-4 py-3 text-sm font-semibold hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </button>
                     ))}
                   </div>
                 </div>
