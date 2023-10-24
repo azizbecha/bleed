@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
                         </li>
                     </ul>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <hr className="my-6 border-y-1 border-gray-200 sm:mx-auto lg:my-8" />
                 <span className="block text-sm text-gray-500 sm:text-center font-bold">
                     © {new Date().getFullYear()}{" - "}
                     <Link href="/" className="hover:underline">
