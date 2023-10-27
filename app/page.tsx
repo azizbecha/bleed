@@ -2,6 +2,8 @@
 
 import { RefObject } from 'react'
 
+import Link from 'next/link'
+
 import Navbar from '@/components/Navbar'
 import AOSWrapper from '@/components/AOSWrapper'
 import { Hero } from '@/components/Hero'
@@ -11,13 +13,12 @@ import { ProductsRow } from '@/components/ProductsRow'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { NoteSlider } from '@/components/NoteSlider'
+import { ScrollToTopButton } from '@/components/ScrollToTopButton'
 
 import { IoMdArrowDropright } from "react-icons/io"
 
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
-import Link from 'next/link'
-import { ScrollToTopButton } from '@/components/ScrollToTopButton'
 
 export default function Home() {
   return (

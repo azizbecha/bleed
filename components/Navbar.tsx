@@ -7,13 +7,13 @@ import { FaBars, FaShoppingCart, FaTimes } from "react-icons/fa"
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'About', href: '#', current: false },
-  { name: 'Products', href: '#', current: false },
-  { name: 'Order Tracking', href: "#", current: false },
-  { name: 'Gallery', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'FAQ', href: '#', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'About', href: 'about', current: false },
+  { name: 'Products', href: 'products', current: false },
+  { name: 'Order Tracking', href: "tracking", current: false },
+  { name: 'Gallery', href: 'gallery', current: false },
+  { name: 'Contact', href: 'contact', current: false },
+  { name: 'FAQ', href: 'faq', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -63,16 +63,17 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex">
                     {navigation.map((item) => (
+                      <Link href={item.href} key={item.name}>
                         <button
-                          key={item.name}
                           className={classNames(
                             item.current ? 'bg-gray-900' : 'text-primary',
-                            'rounded-md px-4 py-3 text-sm font-semibold hover:border-b-2 hover:mb-3 hover:rounded-none hover:border-primary border-transparent transition-all'
+                            'rounded-md px-3 py-2 mx-1 text-sm font-semibold border-transparent transition-all hover:bg-primary hover:text-white'
                           )}
                           aria-current={item.current ? 'page' : undefined}
                         >
-                          {item.name}
+                            {item.name}
                         </button>
+                      </Link>
                     ))}
                   </div>
                 </div>

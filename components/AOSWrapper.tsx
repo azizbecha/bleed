@@ -1,4 +1,5 @@
 "use client"
+
 import { useEffect } from 'react';
 
 import NextNProgress from 'nextjs-progressbar';
@@ -12,7 +13,7 @@ export default function AOSWrapper({
     children: React.ReactNode
 }) {
     useEffect(() => {
-        AOS.init()
+        AOS.init();
     }, []);
 
     return (
