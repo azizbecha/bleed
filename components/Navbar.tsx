@@ -1,10 +1,11 @@
 "use client"
 
 import { Fragment } from 'react'
+import Link from 'next/link'
+
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 
 import { FaBars, FaShoppingCart, FaTimes } from "react-icons/fa"
-import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -39,18 +40,20 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <Link href="/">
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <Link href="/" passHref>
                   <div className="flex flex-shrink-0 items-center">
                     <img
-                      className="h-14 w-auto"
+                      className="h-14 w-auto mx-auto"
                       src="../BLEED LOGO.png"
                       alt="BLEED"
                     />
                     <h5 className='text-black text-2xl font-bold sm:block hidden'>BLEED</h5>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
+
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* <button
                   type="button"
