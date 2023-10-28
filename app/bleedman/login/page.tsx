@@ -59,7 +59,7 @@ function Login() {
                                 <input type="password" disabled={loading} placeholder="Password" onChange={(e) => setPassword(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" required />
                             </div>
 
-                            <button type='submit' disabled={loading} className='px-6 py-2 rounded-md text-white bg-primary'>Login</button>
+                            <button type='submit' disabled={loading} className='px-6 py-2 transition rounded-md text-white bg-primary disabled:bg-gray-300'>Login</button>
                         </form>
                     </div>
                 </div>
