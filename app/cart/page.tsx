@@ -1,9 +1,11 @@
+import { NextPage } from "next";
+
 import AOSWrapper from "@/components/AOSWrapper";
 import { Container } from "@/components/Container";
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Title } from "@/components/Title";
-import { NextPage } from "next";
+
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 interface Item {
