@@ -1,8 +1,9 @@
+import { NextPage } from "next";
+import Link from "next/link";
+
 import { Container } from "@/components/Container";
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { NextPage } from "next";
-import Link from "next/link";
 
 const NotFound: NextPage = () => {
     return (
